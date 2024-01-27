@@ -8,7 +8,7 @@ export const Cover = ({coverSource, style}: CoverSource) => {
 	return (
 		<picture className={styles.picture} style={style}>
 		<Image src={coverSource} alt="cover" width={100}
-		       height={100} className={styles.cover} />
+		       height={100} className={styles.cover} priority={true}/>
 		</picture>
 	);
 };
