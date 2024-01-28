@@ -4,9 +4,12 @@ import {IconSource} from '~/interfaces';
 
 import styles from './IconPage.module.css';
 
-export const IconPage = ({iconSource, style}: IconSource) => {
+export const IconPage = ({source, className, style, width = 100, height = 100}: IconSource) => {
 	return (
-		<Image src={iconSource} alt="icon" width={100}
-		       height={100} className={styles.iconPage} style={style}/>
+		<picture className={`${styles.picture} ${className}`} style={style}>
+			<Image src={source} alt="icon" width={width} height={height} priority={false}
+			       loading="lazy"
+			/>
+		</picture>
 	);
 };

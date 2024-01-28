@@ -1,9 +1,15 @@
 export interface CoverSource {
-	coverSource: string;
+	source: string;
 	style?: any;
+	className?: any;
+	width?: number;
+	height?: number;
 }
 
 export interface IconSource {
-	iconSource: string;
+	source: string;
 	style?: any;
+	className?: any;
+	width?: number;
+	height?: number;
 }
