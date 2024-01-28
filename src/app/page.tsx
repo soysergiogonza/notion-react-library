@@ -1,11 +1,22 @@
+import {Cover, IconPage} from '../components';
 import styles from './page.module.css';
-import {Cover} from '../components';
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			<section>
-					<Cover coverSource="/notion-react-library.svg" />
+			<section className={styles.hero}>
+				<Cover
+					source="/notion-react-library.svg"
+					className={styles.cover}
+					width={100}
+					height={100}
+				/>
+				<IconPage
+					source="/notion-react-library_icon.svg"
+					className={styles.icon}
+					width={100}
+					height={100}
+				/>
 			</section>
 		</main>
 	);

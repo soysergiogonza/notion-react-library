@@ -2,14 +2,12 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	padding-inline: 16vw;
-	padding-block-start: 8vh;
 	
 	.cover {
-		display: block;
 		object-fit: fill;
 		width: 100%;
 		height: 100%;
-		object-position: center 50%;
 	}
 }
+
+

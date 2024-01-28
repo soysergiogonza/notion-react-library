@@ -4,11 +4,11 @@ import {CoverSource} from '~/interfaces';
 
 import styles from './Cover.module.css';
 
-export const Cover = ({coverSource, style}: CoverSource) => {
+export const Cover = ({source, className, style, width, height}: CoverSource) => {
 	return (
-		<picture className={styles.picture} style={style}>
-		<Image src={coverSource} alt="cover" width={100}
-		       height={100} className={styles.cover} priority={true}/>
+		<picture className={`${styles.picture} ${className}`} style={style}>
+			<Image src={source} alt="cover" width={width} height={height} className={styles.cover} priority={true}
+			/>
 		</picture>
 	);
 };
